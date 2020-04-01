@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <h1 class="header__title">Notes App</h1>
+            <h2 class="header__subtitle">Take notes and never forget</h2>
+        </div>
+    </div>
+    <div class="actions">
+        <div class="actions__container actions__container--spaced ">
+            <a href="./index.html">Home</a>
+            <span id="moment_edited" class="actions__container--spaced--modified"></span>
+        </div>
+    </div>
+    <div class="container">
+        <input placeholder="Note Title" class="title-input" type="text" name="" id="noteTitleId" />
+        <textarea placeholder="Description" class="body-input" name="" id="noteDescId" cols="30" rows="10"></textarea>
+        <button id="remove_note" class="button button--secondary">Remove</button>
+    </div>
+    <script src="./scripts/edit-bundle.js"></script>
+</body>
+
+</html>

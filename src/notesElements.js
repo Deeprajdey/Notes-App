@@ -1,0 +1,13 @@
+import { userJSONNotesArr, hashValueMatching } from "./notesFunction";
+("use strict");
+export let notesArr = userJSONNotesArr();
+export let addNoteButton = document.querySelector("#add_note");
+export let removeNotesButton = document.querySelector("#remove_note");
+export let displayFilterNotes = document.querySelector("#filterNote");
+export let noteContent = document.querySelector("#noteContent");
+export let noteTitleId = document.querySelector("#noteTitleId");
+export let noteDescId = document.querySelector("#noteDescId");
+export let hashValue = location.hash.substring(1);
+export let editingNote = hashValueMatching(notesArr, hashValue);
+export let updatedSpan = document.querySelector("#moment_edited");
+export let displaySortedNotes = document.querySelector("#sortedLevel");
